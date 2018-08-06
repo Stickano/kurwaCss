@@ -1,0 +1,25 @@
+
+
+@import '../variables';
+
+a.top {
+	border-radius   : 50%;
+	border          : $border;
+	bottom          : 1.8%;
+	height          : 48px;
+	line-height     : 40px;
+	right           : 2%;
+	text-align      : center;
+	text-decoration : none;
+	width           : 50px;
+	z-index         : 999;
+	background-color: white;
+	color           : $gray;
+	position        : fixed;
+}
+a.top:hover {
+	background-color: $gray-lightest;
+}
+a.top:active {
+	background-color: $active-default;
+}

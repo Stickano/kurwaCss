@@ -1,0 +1,36 @@
+
+
+@import '../variables';
+
+// Adjust font to screen size 
+html {
+	font-size: 100%;
+}
+@media (min-width: 640px) {
+  html { font-size: 112%; }
+}
+@media (min-width: 1024px) {
+  html { font-size: 120%; }
+}
+
+// Default Links 
+a {
+	color          : $links-color;
+	text-decoration: none;
+}
+
+// Default Headlines and Paragraphs 
+h1, h2, h3, h4, h5 {
+	margin-top:.5em;
+}
+
+p {
+	font-size  : 1em;
+	line-height: 1.45em;
+	margin     : 0.5em 0;
+}
+
+// Justify Text 
+.justify {
+	text-align: justify;
+}

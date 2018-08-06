@@ -1,0 +1,36 @@
+
+
+@import '../variables';
+@import '../functions';
+
+ul.link-list {
+	font-family    : $hel-font;
+	list-style-type: none;
+	margin         : 0;
+	padding        : 0;
+
+	li {
+		border-bottom: $border-lighter;
+
+		a {
+			color             : black;
+			display           : block;
+			text-decoration   : none;
+			@include transition-double-curve(font-size, 0.1s, ease,	background-color, 0.3s, ease);
+		}
+
+		a:hover {
+			font-size : 1.15em;
+		}
+	}
+
+	li:last-child {
+		border: none;
+	}
+
+	h1,	h2,	h3,	h4,	h5 {
+		font-family: $hel-font;
+		margin     : 0;
+		padding    : 0;
+	}
+}

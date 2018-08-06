@@ -1,0 +1,71 @@
+
+
+@import '../variables';
+
+.warning {
+	border       : $border;
+	border-radius: $border-radius;
+	color        : $gray;
+	font-family  : $hel-font;
+	margin       : 1.5% 0;
+	padding      : 1.5% 2%;
+
+	a {
+		color      : $gray-darker;
+		font-weight: bold;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+.warning.bg-blue {
+	background-color: $blue;
+	border          : 1px solid #265c8a;
+	color           : $gray-lightest;
+
+	a {
+		color: white;
+	}
+}
+
+.warning.bg-green {
+	background-color: #dff0d8;
+	border          : 1px solid #d6e9c6;
+	color           : #3c763d;
+
+	a {
+		color: #2b542c;
+	}
+}
+
+.warning.bg-lightblue {
+	background-color: #d9edf7;
+	border          : 1px solid #bce8f1;
+	color           : #31708f;
+
+	a {
+		color: #245269;
+	}
+}
+
+.warning.bg-yellow {
+	background-color: #fcf8e3;
+	border          : 1px solid #faebcc;
+	color           : #8a6d3b;
+
+	a {
+		color: #66512c;
+	}
+}
+
+.warning.bg-red {
+	background-color: #f2dede;
+	border          : 1px solid #ebccd1;
+	color           : #a94442;
+
+	a {
+		color: #843534;
+	}
+}

@@ -1,0 +1,50 @@
+
+
+@import '../variables';
+@import '../functions';
+
+// Simple input text field
+.input-line {
+	background   : transparent;
+	border       : none;
+	border-bottom: 1px dotted black;
+	color        : $gray-darker;
+	display      : block;
+	margin       : $input-margin;
+	padding      : 5px 2px 0 2px;
+
+	&:focus {
+		border-bottom: $border-focus;
+		outline      : none;
+	}
+}
+
+// Simple textarea
+.input-textarea {
+	border-radius: $border-radius;
+	border       : $border;
+	display      : block;
+	margin       : $input-margin;
+	padding      : $input-padding;
+	min-width    : 210px;
+	min-height   : 150px;
+
+	&:focus {
+		border   : $border-focus;
+		@include box-shadow(0, 0, 2px, 1px, $border-focus-color);
+	}
+}
+
+// Modern (line) input text field
+.input-simple {
+	border-radius: $border-radius;
+	border       : $border;
+	display      : block;
+	margin       : $input-margin;
+	padding      : $input-padding;
+
+	&:focus {
+		border   : $border-focus;
+		@include box-shadow(0, 0, 2px, 1px, $border-focus-color);
+	}
+}

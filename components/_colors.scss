@@ -1,0 +1,36 @@
+
+
+@import '../variables';
+
+.blue {
+	color: $blue;
+}
+.green {
+	color: $green;
+}
+.lightblue {
+	color: $light-blue;
+}
+.yellow {
+	color: $yellow;
+}
+.red {
+	color: $red;
+}
+
+// Similar Colors for Backgrounds 
+.bg-blue {
+	background-color: $blue;
+}
+.bg-green {
+	background-color: $green;
+}
+.bg-lightblue {
+	background-color: $light-blue;
+}
+.bg-yellow {
+	background-color: $yellow;
+}
+.bg-red {
+	background-color: $red;
+}

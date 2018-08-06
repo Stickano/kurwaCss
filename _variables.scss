@@ -1,0 +1,93 @@
+
+
+//	Component Variables
+//	# # # # # # # # # #
+
+
+//	Colors
+//	# # # # # #
+$blue      : #337ab7;
+$green     : #5cb85c;
+$light-blue: #5bc0de;
+$red       : #d9534f;
+$yellow    : #f0ad4e;
+
+$gray         : #555;
+$gray-darker  : #333;
+$gray-darkest : #222;
+$gray-lighter : #777;
+$gray-lightest: #eee;
+
+
+// Borders
+//	# # # # # #
+$border-radius : 4px;
+$border        : 1px solid $gray;
+// Disabled ex
+$border-lighter: 1px solid $gray-lightest;
+
+
+// Font Settings
+//	# # # # # # # #
+$font-size: .77em;
+$hel-font: Helvetica, Verdana, sans-serif;
+$geo-font: Georgia, "Times New Roman", serif;
+
+
+// Input Elements and the Submit-Like links
+// # # # # # # # # # # # # # # # # # # # # #
+
+// Spacings
+$input-margin: 15px 0;
+$input-padding: 6px;
+$input-button-padding: 6px 10px;
+$input-min-width: 210px;
+
+// Fonts
+$input-line-height: 1.2em;
+
+// Border Colors
+$border-blue      : #265c8a;
+$border-green     : #458a45;
+$border-light-blue: #3b7d91;
+$border-red       : #a43f3c;
+$border-yellow    : #c58e40;
+// Focus for specific inputs (txt)
+$border-focus-color: #5bc0de;
+
+// Hover Colors (bg)
+$hover-blue      : #2c6a9f;
+$hover-green     : #4e9d4e;
+$hover-light-blue: #4ca0b9;
+$hover-red       : #c24a47;
+$hover-yellow    : #dc9f47;
+
+// Active Colors (bg)
+$active-blue      : #265c8a;
+$active-green     : #458a45;
+$active-light-blue: #3b7d91;
+$active-red       : #a43f3c;
+$active-yellow    : #c58e40;
+$active-default	  : #e5e5e5;
+
+// Borders
+$border-focus  	  : 1px solid $border-focus-color;
+$border-blue      : 1px solid $border-blue;
+$border-green     : 1px solid $border-green;
+$border-light-blue: 1px solid $border-light-blue;
+$border-red       : 1px solid $border-red;
+$border-yellow    : 1px solid $border-yellow;
+
+
+
+
+//	Typography Variables
+//	# # # # # # # # # # #
+
+// Fonts
+$links-color: #00bfff;
+$capped-size: 2em;
+$capped-line-height: 1em;
+
+// Borders
+$border-radius: 3px;

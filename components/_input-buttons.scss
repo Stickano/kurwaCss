@@ -1,0 +1,106 @@
+
+
+@import '../variables';
+@import '../functions';
+
+.input-button {
+	background-color  : white;
+	border            : $border;
+	border-radius     : $border-radius;
+	color             : black;
+	cursor            : pointer;
+	display           : block;
+	font-size         : $font-size;
+	line-height       : $input-line-height;
+	margin            : $input-margin;
+	padding           : $input-button-padding;
+	@include transition(background-color, 150ms);
+
+	&:hover {
+		background-color: $gray-lightest;
+	}
+
+	&:active {
+		background-color: $active-default;
+	}
+}
+
+.input-button.bg-blue {
+	background-color: $blue;
+	border: $border-blue;
+	color: white;
+
+	&:hover {
+		background-color: $hover-blue;
+		color           : white;
+	}
+
+	&:active {
+		background-color: $active-blue;
+		color           : white;            
+	}
+}
+
+.input-button.bg-green {
+	background-color: $green;
+	border          : $border-green;
+	color           : white;
+
+	&:hover {
+		background-color: $hover-green;
+		color           : white;
+	}
+
+	&:active {
+		background-color: $active-green;
+		color           : white;            
+	}
+}
+
+.input-button.bg-lightblue {
+	background-color: $light-blue;
+	border          : $border-light-blue;
+	color           : white;
+
+	&:hover {
+		background-color: $hover-light-blue;
+		color           : white;
+	}
+
+	&:active {
+		background-color: $active-light-blue;
+		color           : white;            
+	}
+}
+
+.input-button.bg-yellow {
+	background-color: $yellow;
+	border          : $border-yellow;
+	color           : white;
+
+	&:hover {
+		background-color: $hover-yellow;
+		color           : white;
+	}
+
+	&:active {
+		background-color: $active-yellow;
+		color           : white;            
+	}
+}
+
+.input-button.bg-red {
+	background-color: $red;
+	border          : $border-red;
+	color           : white;
+
+	&:hover {
+		background-color: $hover-red;
+		color           : white;
+	}
+
+	&:active {
+		background-color: $active-red;
+		color           : white;            
+	}
+}

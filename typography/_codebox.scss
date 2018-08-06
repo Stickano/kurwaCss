@@ -1,0 +1,26 @@
+
+
+pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size  : 95%;
+	line-height: 140%;
+	margin     : 15px 0;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: pre-wrap;
+	white-space: pre;
+}
+code {
+	background : #faf8f0;
+	border     : 1px solid #bebab0;
+	display    : block;
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size  : 95%;
+	line-height: 140%;
+	overflow   : auto;
+	padding    : 0.5em 1em;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: pre-wrap;
+	white-space: pre;
+}

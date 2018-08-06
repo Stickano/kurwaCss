@@ -1,0 +1,48 @@
+
+
+@import '../variables';
+
+.input-radio{
+
+	input[type=radio] {
+ 		display: none;
+ 	}
+
+ 	input[type=radio]:checked + label:before {
+		color      : $gray-lighter;
+		content    : "\2022";
+		font-size  : 2em;
+		line-height: .7em;
+		padding    : 0;
+		text-align : center;
+	}
+
+	label {
+		-moz-user-select   : none;
+		-ms-user-select    : none;
+		-webkit-user-select: none;
+		user-select        : none;
+		color              : $border;
+		cursor             : pointer;
+		display            : inline-block;
+		font-size          : $font-size;
+		margin-right       : 15px;
+		padding-left       : 25px;
+		position           : relative;
+
+		&:before {
+			background-color: $gray-lightest;
+			border-radius   : 24px;
+			box-shadow      : inset 0 0 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+			content         : "";
+			display         : inline-block;
+			height          : .6em;
+			left            : 0;
+			margin-right    : 10px;
+			padding         : .3em;
+			position        : absolute;
+			width           : .6em;
+		}
+	}
+}
+

@@ -1,0 +1,27 @@
+
+
+@import '../variables';
+
+// Indent double Paragraphs 
+p+p {
+	text-indent: 1.5em;
+}
+
+// Elevated first letter 
+p.cap:first-letter {
+	font-size     : $capped-size;
+	line-height   : $capped-line-height;
+	letter-spacing: .1em;
+}
+
+// Elevated first letter with bold first line 
+p.cap-line:first-letter {
+	float      : left;
+	font-size  : $capped-size;
+	font-weight: 400;
+	line-height: $capped-line-height;
+	margin     : 0 .107em 0 0;
+}
+p.cap-line:first-line {
+	font-weight: 800;
+}

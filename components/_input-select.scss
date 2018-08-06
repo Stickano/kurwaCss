@@ -1,0 +1,43 @@
+
+
+@import '../variables';
+@import '../functions';
+
+.input-select {
+	float    : left;
+	min-width: $input-min-width;
+	position : relative;  
+
+	&::after {
+		border-bottom    : $border-lighter;
+		color            : $gray;
+		content          : '>';
+		font             : 17px "Consolas", monospace;
+		padding          : 0 0 2px;
+		pointer-events   : none;
+		position         : absolute;
+		right            : 11px;
+		top              : 5px;
+		@include rotate(90deg);
+	}
+
+	select {
+		-moz-appearance   : none;
+		-webkit-appearance: none;
+		appearance        : none;
+		background-color  : white;
+		background-image  : none;
+		border            : $border;
+		border-radius     : $border-radius;
+		color             : $gray-darker;
+		display           : block;
+		padding           : 6px 24px;
+		width             : 100%;
+
+		&:focus {
+			border   : $border-focus;
+			@include box-shadow(0, 0, 2px, 1px, $border-focus-color);
+		}
+	}
+}
+

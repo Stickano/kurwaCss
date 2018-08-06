@@ -1,0 +1,130 @@
+
+
+@import '../variables';
+@import '../functions';
+
+.input-file {
+	border            : $border;
+	border-radius     : $border-radius;
+	color             : black;
+	display           : inline-block;
+	font-size         : $font-size;
+	line-height       : $input-line-height;
+	margin            : $input-margin;
+	padding           : $input-padding;
+	overflow          : hidden;
+	position          : relative;
+	@include transition(background-color, 150ms);
+
+	&:hover {
+		background-color: $gray-lightest;
+	}
+
+	&:active {
+		background-color: $active-default;
+	}
+
+	 input {
+		bottom  : 0;
+		cursor  : pointer;
+		display : inline-block;
+		left    : 0;
+		opacity : 0;
+		overflow: hidden;
+		position: absolute;
+		right   : 0;
+		top     : 0;
+		width   : 100%;
+	}
+}
+
+.input-file.bg-blue {
+	background-color: $blue;
+	border: $border-blue;
+	color: white;
+
+	&:hover {
+		background-color: $hover-blue;
+		color           : white;
+	}
+
+	&:active {
+		background-color: $active-blue;
+		color           : white;            
+	}
+}
+
+.input-file.bg-green {
+	background-color: $green;
+	border          : $border-green;
+	color           : white;
+
+	&:hover {
+		background-color: $hover-green;
+		color           : white;
+	}
+
+	&:active {
+		background-color: $active-green;
+		color           : white;            
+	}
+}
+
+.input-file.bg-lightblue {
+	background-color: $light-blue;
+	border          : $border-light-blue;
+	color           : white;
+
+	&:hover {
+		background-color: $hover-light-blue;
+		color           : white;
+	}
+
+	&:active {
+		background-color: $active-light-blue;
+		color           : white;            
+	}
+}
+
+.input-file.bg-yellow {
+	background-color: $yellow;
+	border          : $border-yellow;
+	color           : white;
+
+	&:hover {
+		background-color: $hover-yellow;
+		color           : white;
+	}
+
+	&:active {
+		background-color: $active-yellow;
+		color           : white;            
+	}
+}
+
+.input-file.bg-red {
+	background-color: $red;
+	border          : $border-red;
+	color           : white;
+
+	&:hover {
+		background-color: $hover-red;
+		color           : white;
+	}
+
+	&:active {
+		background-color: $active-red;
+		color           : white;            
+	}
+}
+
+.file-value {
+	background-color: white;
+	border-radius   : $border-radius;
+	border          : $border-lighter;
+	margin          : $input-margin; 
+	margin-right	: 5px;
+	padding         : $input-padding;
+	float			: left;
+}
+

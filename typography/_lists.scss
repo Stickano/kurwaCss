@@ -1,0 +1,20 @@
+
+
+// Un-ordered list 
+ul {
+	line-height        : 1.65em;
+	list-style-position: inside;
+	margin             : .4em 0 0 1em;
+}
+ul.square {
+    list-style-type: square;
+}
+
+// Ordered List 
+ol {
+	line-height: 1.65em;
+	margin     : .4em 0 0 2em;
+}
+ol.alpha {
+    list-style-type: lower-alpha;
+}

@@ -1,0 +1,39 @@
+
+
+@import '../variables';
+@import '../functions';
+
+ul.horizontal-menu {
+	list-style-type: none;
+	overflow       : auto;
+
+	li {
+		border-right: $border-lighter;
+		float       : left;
+		height      : 25px;
+		margin-right: 0px;
+		padding     : 0 20px;
+
+		a {
+			color             : #ccc;
+			font-family       : $hel-font;
+			text-decoration   : none;
+			text-transform    : uppercase;
+			@include transition-curve(all, 0.5s, ease);
+		}
+
+		a:hover {
+			color: #666;
+		}
+	}
+
+	.active a {
+		color      : $gray-darker;
+		font-weight: bold;
+	}
+
+	li:last-child {
+		border-right: none;
+	}
+}
+

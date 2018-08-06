@@ -1,0 +1,50 @@
+
+
+@import '../variables';
+
+.input-check {
+	
+	input[type=checkbox] {
+ 		display: none;
+ 	}
+
+ 	input[type=checkbox]:checked + label:before {
+		color      : $gray;
+		content    : "\2713";
+		font-size  : 1.4em;
+		line-height: .53em;
+		padding    : .155em;
+		text-align : center;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	}
+
+	label {
+		-moz-user-select   : none;
+		-ms-user-select    : none;
+		-webkit-user-select: none;
+		user-select        : none;
+		color              : $gray;
+		cursor             : pointer;
+		display            : inline-block;
+		font-size          : $font-size;
+		margin-right       : 15px;
+		padding-left       : 25px;
+		position           : relative;
+
+		&:before {
+			background-color  : $gray-lightest;
+			border-radius     : $border-radius;
+			-webkit-box-shadow: inset 0 0 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+			box-shadow        : inset 0 0 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+			content           : "";
+			display           : inline-block;
+			height            : .6em;
+			left              : 0;
+			margin-right      : 10px;
+			padding           : .33em;
+			position          : absolute;
+			width             : .6em;
+		}
+	}
+}
+

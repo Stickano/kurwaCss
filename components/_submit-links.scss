@@ -1,0 +1,106 @@
+
+
+@import '../variables';
+@import '../functions';
+
+a[class*="bg"] {
+	background-color  : white;
+	border            : $border;
+	border-radius     : $border-radius;
+	color             : black;
+	display           : inline;
+	font-size         : $font-size;
+	line-height       : $input-line-height;
+	margin            : $input-margin;
+	padding           : $input-button-padding;
+	@include transition(background-color, 150ms);
+
+	&:hover {
+		background-color: $gray-lightest;
+	}
+
+	&:active {
+		background-color: $active-default;
+	}
+}
+
+a.bg-blue {
+	color: white;
+	background-color: $blue;
+	border: $border-blue;
+
+	&:hover {
+		color: white;
+		background-color: $hover-blue;
+	}
+
+	&:active {
+		color: white;
+		background-color: $active-blue;
+	}
+}
+
+a.bg-green {
+	color: white;
+	background-color: $green;
+	border: $border-green;
+
+	&:hover {
+		color: white;
+		background-color: $hover-green;
+	}
+
+	&:active {
+		color: white;
+		background-color: $active-green;
+	}
+}
+
+a.bg-lightblue {
+	color: white;
+	background-color: $light-blue;
+	border: $border-light-blue;
+
+	&:hover {
+		color: white;
+		background-color: $hover-light-blue;
+	}
+
+	&:active {
+		color: white;
+		background-color: $active-light-blue;
+	}
+}
+
+a.bg-yellow {
+	color: white;
+	background-color: $yellow;
+	border: $border-yellow;
+
+	&:hover {
+		color: white;
+		background-color: $hover-yellow;
+	}
+
+	&:active {
+		color: white;
+		background-color: $active-yellow;
+	}
+}
+
+a.bg-red {
+	color: white;
+	background-color: $red;
+	border: $border-red;
+
+	&:hover {
+		color: white;
+		background-color: $hover-red;
+	}
+
+	&:active {
+		color: white; 
+		background-color: $active-red;
+	}
+}
+

@@ -1,0 +1,12 @@
+
+@import '../variables';
+
+.label {
+	border-radius   : $border-radius;
+	color           : whitesmoke;
+	font-size       : .8em;
+	font-weight     : bold;
+	padding         : 4px 6px;
+	background-color: $gray;
+}
+

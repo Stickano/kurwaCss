@@ -1,0 +1,37 @@
+
+
+@import '../variables';
+
+.gray {
+	color: $gray;
+}
+.gray-darker {
+	color: $gray-darker;
+}
+.gray-darkest {
+	color: $gray-darkest;
+}
+.gray-lighter {
+	color: $gray-lighter;
+}
+.gray-lightest {
+	color: $gray-lightest;
+}
+
+// And their background equivalent 
+.bg-gray {
+	background-color: $gray;
+}
+.bg-gray-darker {
+	background-color: $gray-darker;
+}
+.bg-gray-darkest {
+	background-color: $gray-darkest;
+}
+.bg-gray-lighter {
+	background-color: $gray-lighter;
+}
+.bg-gray-lightest {
+	background-color: $gray-lightest;
+}
+

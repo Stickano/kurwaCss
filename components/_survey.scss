@@ -1,0 +1,122 @@
+
+
+@import '../variables';
+@import '../functions';
+
+.survey {
+	h1, h2, h3, h4, h5 {
+		background-color: $gray-darkest;
+		color           : #ccc;
+		font-family     : $hel-font;
+		padding         : 1% 2%;
+	}
+
+	ul {
+		list-style: none;
+		margin    : 0;
+		overflow  : auto;
+		padding   : 0;
+
+		li {
+			border-bottom: 1px solid $gray-darker;
+			display      : block;
+			float        : left;
+			height       : 100px;
+			position     : relative;
+			width        : 100%;
+
+			input[type=radio] {
+				position  : absolute;
+				visibility: hidden;
+			}
+
+			label {
+				color			  : #ccc;
+				cursor            : pointer;
+				display           : block;
+				font-size         : 1.35em;
+				font-weight       : 300;
+				height            : 30px;
+				margin            : 10px auto;
+				padding           : 25px 25px 25px 80px;
+				position          : relative;
+				z-index           : 9;
+				@include transition-curve(all, 0.25s, linear);
+			}
+
+			.cirkel {
+				z-index           : 5;
+				border-radius     : 100%;
+				border            : 5px solid #ccc;
+				display           : block;
+				height            : 26px;
+				left              : 20px;
+				position          : absolute;
+				top               : 40px;
+				width             : 26px;
+				@include transition-curve(border, 0.25s, linear);
+			}
+
+			.cirkel:before {
+				border-radius     : 100%;
+				content           : '';
+				display           : block;
+				height            : 10px;
+				left              : 3px;
+				top               : 3px;
+				margin            : auto;
+				position          : absolute;
+				width             : 10px;
+				@include transition-curve(background, 0.25s, linear);
+			}
+		}
+
+		li:last-child {
+			border: none;
+		}
+
+		li:hover label {
+			color: white;
+		}
+
+		li:hover .cirkel {
+		  border: 5px solid white;
+		}
+	}
+
+	input[type=radio]:checked ~ .cirkel {
+		border: 5px solid #5cb85c;
+	}
+
+	input[type=radio]:checked ~ .cirkel:before {
+		background: #5cb85c;
+	}
+
+	input[type=radio]:checked ~ label {
+		color: #5cb85c;
+	}
+
+	input[type=submit] {
+		background-color: #5cb85c;
+		border-radius   : 5px;
+		border          : 1px solid #458a45;
+		color           : $gray-lightest;
+		cursor          : pointer;
+		font-family     : $hel-font;
+		font-size       : 1.35em;
+		font-weight     : bold;
+		padding         : 26px 0 26px 50px;
+		text-align      : left;
+		text-transform  : uppercase;
+		width           : 100%;
+	}
+
+	input[type=submit]:hover {
+		background-color: #4e9d4e;
+	}
+
+	input[type=submit]:active {
+		background-color: #458a45;
+	}
+}
+
